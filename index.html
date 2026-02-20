@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Konecta 2026 | Next-Gen IT Learning </title>
+    <meta name="title" content="Konecta - The Best Program to Enroll for Exchange">
+    <meta name="description" content="Next generation E-Learning platform for Gen Z">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg+xml">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- New 2026 Editorial SaaS Core Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="top">
+
+    <!-- FLOATING NAVBAR (Finlaxy Style) -->
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="navbar-pill">
+                <a href="#top" class="logo">
+                    <div class="logo-dot"></div>
+                    Konecta.
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#" onclick="alert('Articles coming soon!'); return false;"
+                            class="nav-link">Articles</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#courses" class="btn-primary btn-sm">Explore</a>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="toggle menu" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+            <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+            <a href="#courses" class="mobile-nav-link" onclick="closeMobileMenu()">Courses</a>
+            <a href="#" class="mobile-nav-link" onclick="alert('Coming soon!'); closeMobileMenu()">Articles</a>
+        </nav>
+        <a href="#courses" class="btn-primary" onclick="closeMobileMenu()">Explore Courses</a>
+    </div>
+
+    <main>
+        <article>
+
+            <!-- HERO SECTION -->
+            <!-- HERO SECTION (Restored Editorial) -->
+            <section class="section hero" id="home" aria-label="home"
+                style="min-height: 100vh; display: flex; align-items: center; background-color: var(--bg-dark); color: var(--text-on-dark); text-align: center; padding-top: 100px;">
+                <div class="container">
+                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="mono-text" style="color: var(--accent-secondary); margin-bottom: 24px;">
+                            // NEXT GENERATION LEARNING
+                        </p>
+
+                        <h1 class="h1" style="color: var(--text-on-dark); font-style: normal; margin-bottom: 32px;">
+                            Level Up Your Skills with <i
+                                style="font-family: var(--font-serif); font-weight: 400;">Expert</i> Guidance.
+                        </h1>
+
+                        <p
+                            style="font-size: 1.25rem; color: rgba(242, 239, 233, 0.7); margin-bottom: 48px; max-width: 700px; margin-inline: auto;">
+                            Platform pembelajaran terkurasi untuk mempersiapkan generasi Z menghadapi dunia industri
+                            modern
+                            dengan kurikulum standar global.
+                        </p>
+
+                        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                            <a href="#courses" class="btn-primary">Mulai Belajar Sekarang</a>
+                            <a href="#about" class="btn-secondary"
+                                style="border-color: rgba(242, 239, 233, 0.3); color: var(--text-on-dark);">Kenali
+                                Konecta</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CATEGORY TICKER (Seamless Loop) -->
+            <div class="category-ticker" aria-hidden="true">
+                <div class="ticker-content">
+                    <div class="ticker-pill" style="background: var(--bg-dark); color: #FFF;">Web Development</div>
+                    <div class="ticker-pill" style="background: #FFF; border: 1px solid var(--border-subtle);">UI/UX
+                        Design</div>
+                    <div class="ticker-pill"
+                        style="border: 1px solid var(--accent-primary); color: var(--accent-primary); background: #FFF;">
+                        Cyber Security</div>
+                    <div class="ticker-pill" style="background: var(--accent-primary); color: #FFF;">Data Science</div>
+                    <div class="ticker-pill" style="background: #FFF; border: 1px solid var(--border-subtle);">App
+                        Development</div>
+                    <div class="ticker-pill" style="background: var(--bg-dark); color: #FFF;">Cloud Computing</div>
+                    <div class="ticker-pill" style="background: var(--accent-primary); color: #FFF;">AI Engineering
+                    </div>
+                    <div class="ticker-pill"
+                        style="border: 1px solid var(--accent-primary); color: var(--accent-primary); background: #FFF;">
+                        Digital Marketing</div>
+
+                    <!-- Duplicate for Seamless Loop -->
+                    <div class="ticker-pill" style="background: var(--bg-dark); color: #FFF;">Web Development</div>
+                    <div class="ticker-pill" style="background: #FFF; border: 1px solid var(--border-subtle);">UI/UX
+                        Design</div>
+                    <div class="ticker-pill"
+                        style="border: 1px solid var(--accent-primary); color: var(--accent-primary); background: #FFF;">
+                        Cyber Security</div>
+                    <div class="ticker-pill" style="background: var(--accent-primary); color: #FFF;">Data Science</div>
+                    <div class="ticker-pill" style="background: #FFF; border: 1px solid var(--border-subtle);">App
+                        Development</div>
+                    <div class="ticker-pill" style="background: var(--bg-dark); color: #FFF;">Cloud Computing</div>
+                    <div class="ticker-pill" style="background: var(--accent-primary); color: #FFF;">AI Engineering
+                    </div>
+                    <div class="ticker-pill"
+                        style="border: 1px solid var(--accent-primary); color: var(--accent-primary); background: #FFF;">
+                        Digital Marketing</div>
+                </div>
+            </div>
+
+            <!-- BENEFITS GRID -->
+            <section class="section section-white" id="benefits">
+                <div class="container">
+                    <div style="text-align: center; max-width: 800px; margin-inline: auto; margin-bottom: 60px;">
+                        <p class="mono-text" style="margin-bottom: 16px;">// MENGAPA KONECTA?</p>
+                        <h2 class="h2">Pendidikan yang <i
+                                style="font-family: var(--font-serif); font-weight: 400;">Berpusat</i> pada Anda.</h2>
+                    </div>
+
+                    <div class="benefits-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px;">
+                        <div class="benefit-card" data-aos="fade-up">
+                            <div
+                                style="width: 50px; height: 50px; background: var(--bg-main); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                                <ion-icon name="rocket-outline"
+                                    style="font-size: 1.5rem; color: var(--accent-primary);"></ion-icon>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Kurikulum Modern</h3>
+                            <p style="color: var(--text-secondary);">Materi yang selalu diperbarui mengikuti
+                                perkembangan teknologi terkini di Silicon Valley.</p>
+                        </div>
+
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                            <div
+                                style="width: 50px; height: 50px; background: var(--bg-main); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                                <ion-icon name="people-outline"
+                                    style="font-size: 1.5rem; color: var(--accent-primary);"></ion-icon>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Expert Mentorship</h3>
+                            <p style="color: var(--text-secondary);">Bimbingan langsung dari praktisi industri yang
+                                telah berpengalaman di perusahaan top global.</p>
+                        </div>
+
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                            <div
+                                style="width: 50px; height: 50px; background: var(--bg-main); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                                <ion-icon name="card-outline"
+                                    style="font-size: 1.5rem; color: var(--accent-primary);"></ion-icon>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Biaya Terjangkau</h3>
+                            <p style="color: var(--text-secondary);">Akses pendidikan berkualitas tinggi dengan sistem
+                                pembayaran yang fleksibel bagi siapa saja.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATS RIBBON -->
+            <section
+                style="background-color: var(--bg-dark); color: var(--text-on-dark); padding-block: 60px; border-block: 1px solid rgba(242, 239, 233, 0.1);">
+                <div class="container"
+                    style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; text-align: center;">
+                    <div data-aos="fade-up">
+                        <div style="font-family: var(--font-serif); font-size: 3rem; margin-bottom: 8px;">100k+</div>
+                        <div
+                            style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-secondary);">
+                            Siswa Aktif</div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div style="font-family: var(--font-serif); font-size: 3rem; margin-bottom: 8px;">50+</div>
+                        <div
+                            style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-secondary);">
+                            Kursus Expert</div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div style="font-family: var(--font-serif); font-size: 3rem; margin-bottom: 8px;">1.5k+</div>
+                        <div
+                            style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-secondary);">
+                            Mitra Karir</div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div style="font-family: var(--font-serif); font-size: 3rem; margin-bottom: 8px;">4.9</div>
+                        <div
+                            style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-secondary);">
+                            Rating Rata-rata</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section class="section section-light" id="about">
+                <div class="container"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <div class="about-visual" data-aos="fade-right">
+                        <div style="position: relative; padding: 40px;">
+                            <div
+                                style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 1px solid var(--accent-primary); border-radius: var(--radius-lg); opacity: 0.2;">
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200"
+                                alt="Students learning"
+                                style="border-radius: var(--radius-lg); width: 100%; position: relative;">
+                        </div>
+                    </div>
+
+                    <div class="about-content" data-aos="fade-left">
+                        <p class="mono-text" style="color: var(--accent-primary); margin-bottom: 24px;">// VISI KAMI</p>
+                        <h2 class="h2" style="margin-bottom: 32px;">Membangun Generasi <i
+                                style="font-family: var(--font-serif); font-weight: 400;">Engineer</i> yang Tangguh.
+                        </h2>
+                        <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 40px;">
+                            Konecta lahir dari keresahan akan kesenjangan antara kurikulum akademis dan kebutuhan
+                            industri. Kami hadir untuk menjembatani itu dengan sistem pembelajaran yang efisien dan
+                            tepat sasaran.
+                        </p>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+                            <div>
+                                <h4 style="font-size: 1.25rem; margin-bottom: 12px;">Misi Pertama</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Demokratisasi pendidikan
+                                    teknologi berkualitas tinggi.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.25rem; margin-bottom: 12px;">Misi Kedua</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Menghubungkan talenta
+                                    terbaik dengan peluang karir global.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COURSE CATALOG -->
+            <section class="section section-white" id="courses">
+                <div class="container">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px;">
+                        <div style="max-width: 600px;">
+                            <p class="mono-text" style="color: var(--accent-primary); margin-bottom: 16px;">// KURSUS
+                                UNGGULAN</p>
+                            <h2 class="h2">Eksplorasi Dunia <i
+                                    style="font-family: var(--font-serif); font-weight: 400;">Teknologi</i> Tanpa Batas.
+                            </h2>
+                        </div>
+                        <a href="#courses" class="btn-secondary">Lihat Semua Kelas</a>
+                    </div>
+
+                    <div class="course-grid-elearni">
+
+                        <!-- Course 1 -->
+                        <a href="pages/web-development.html" class="course-card-elearni" data-aos="fade-up">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=800"
+                                    alt="Front-End Developer">
+                                <div class="price-tag">Rp 990.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Alex Mercer
+                            </div>
+                            <h3 class="title">From scratch to pro Front-End Web Developer Expert</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    120 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Mastery
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Course 2 -->
+                        <a href="pages/backend-development.html" class="course-card-elearni" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=800"
+                                    alt="Back-End Architecture">
+                                <div class="price-tag">Rp 1.250.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Sarah Chen
+                            </div>
+                            <h3 class="title">From scratch to pro Back-End Architecture & Microservices</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    150 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Expert
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Course 3 -->
+                        <a href="pages/app-development.html" class="course-card-elearni" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
+                                    alt="Mobile Development">
+                                <div class="price-tag">Rp 850.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                David Okafor
+                            </div>
+                            <h3 class="title">From scratch to pro Mobile App Development with React Native</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    90 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Beginner
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Course 4 -->
+                        <a href="pages/cyber-security.html" class="course-card-elearni" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                                    alt="Cyber Security">
+                                <div class="price-tag">Rp 1.100.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Marco Silva
+                            </div>
+                            <h3 class="title">From scratch to pro Cyber Security & Ethical Hacking</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    110 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Expert
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Course 5 -->
+                        <a href="pages/ai-engineering.html" class="course-card-elearni" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+                                    alt="AI Engineering">
+                                <div class="price-tag">Rp 1.500.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Dr. Aris
+                            </div>
+                            <h3 class="title">From scratch to pro Applied AI & LLM Engineering</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    80 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Emerging
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Course 6 -->
+                        <a href="pages/ui-ux-design.html" class="course-card-elearni" data-aos="fade-up"
+                            data-aos-delay="500">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800"
+                                    alt="Product Design">
+                                <div class="price-tag">Rp 750.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Keira
+                            </div>
+                            <h3 class="title">From scratch to pro Product Design & Systems Masterclass</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    70 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Expert
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Course 7 -->
+                        <a href="pages/data-science.html" class="course-card-elearni" data-aos="fade-up"
+                            data-aos-delay="600">
+                            <div class="thumbnail-wrap">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                                    alt="Data Science">
+                                <div class="price-tag">Rp 1.150.000</div>
+                            </div>
+                            <div class="instructor-info">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Boby
+                            </div>
+                            <h3 class="title">From scratch to pro Data Science & Visualization Masterclass</h3>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    130 Jam
+                                </div>
+                                <div class="meta-item">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                    Advanced
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YOUR LEARNING JOURNEY (Dicoding Style Detailed Paths) -->
+            <section class="section">
+                <div class="container text-center" style="text-align: center;">
+                    <h2 class="h2">Standardized Learning Paths.</h2>
+                    <p style="color: var(--text-secondary); margin-top: 16px;">Contoh Roadmap: Front-End Web Developer
+                    </p>
+
+                    <div class="path-timeline"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: left; margin-top: var(--space-lg);">
+                        <div class="path-node"
+                            style="background: #FFFFFF; border: 1px solid var(--border-subtle); padding: 24px; border-radius: var(--radius-lg); position: relative;"
+                            data-aos="fade-up">
+                            <h3 class="node-title"
+                                style="font-size: 1.15rem; margin-bottom: 12px; color: var(--text-primary);">1. Web
+                                Foundations</h3>
+                            <p class="node-desc"
+                                style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">Membangun
+                                struktur dasar internet, semantic HTML5, Vanilla CSS3 modern, dan aksesibilitas.</p>
+                            <div class="node-skills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span
+                                    style="background: #EEF6FF; color: var(--accent-primary); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">HTML5</span>
+                                <span
+                                    style="background: #EEF6FF; color: var(--accent-primary); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">CSS3</span>
+                            </div>
+                        </div>
+
+                        <div class="path-node"
+                            style="background: #FFFFFF; border: 1px solid var(--border-subtle); padding: 24px; border-radius: var(--radius-lg); position: relative;"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="node-title"
+                                style="font-size: 1.15rem; margin-bottom: 12px; color: var(--text-primary);">2. JS Logic
+                                & DOM</h3>
+                            <p class="node-desc"
+                                style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">Menguasai
+                                ES6+, asynchronous programming, manipulasi DOM, dan Web API standar industri.</p>
+                            <div class="node-skills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span
+                                    style="background: #EEF6FF; color: var(--accent-primary); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">JS
+                                    ES6</span>
+                                <span
+                                    style="background: #EEF6FF; color: var(--accent-primary); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Web
+                                    API</span>
+                            </div>
+                        </div>
+
+                        <div class="path-node"
+                            style="background: #FFFFFF; border: 1px solid var(--border-subtle); padding: 24px; border-radius: var(--radius-lg); position: relative;"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="node-title"
+                                style="font-size: 1.15rem; margin-bottom: 12px; color: var(--text-primary);">3.
+                                Frameworks</h3>
+                            <p class="node-desc"
+                                style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">Belajar
+                                membangun SPA dengan React, state management, dan Server-Side Rendering (Next.js).</p>
+                            <div class="node-skills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span
+                                    style="background: #EEF6FF; color: var(--accent-primary); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">React</span>
+                                <span
+                                    style="background: #EEF6FF; color: var(--accent-primary); padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Next.js</span>
+                            </div>
+                        </div>
+
+                        <div class="path-node"
+                            style="background: var(--bg-dark); border: 1px solid var(--bg-dark); padding: 24px; border-radius: var(--radius-lg); position: relative;"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="node-title" style="font-size: 1.15rem; margin-bottom: 12px; color: #FFF;">4.
+                                Capstone</h3>
+                            <p class="node-desc"
+                                style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 20px;">
+                                Mengerjakan proyek nyata berstandar industri, diulas 1-on-1, dan klaim sertifikat.</p>
+                            <div class="node-skills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span
+                                    style="background: rgba(255,255,255,0.1); color: #FFF; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATION -->
+            <section class="section section-dark" id="certification">
+                <div class="container"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <div class="cert-content" data-aos="fade-right">
+                        <p class="mono-text" style="color: var(--accent-secondary); margin-bottom: 24px;">// SERTIFIKASI
+                        </p>
+                        <h2 class="h2" style="color: var(--text-on-dark); margin-bottom: 32px;">Kredibilitas yang Diakui
+                            secara <i style="font-family: var(--font-serif); font-weight: 400;">Global</i>.</h2>
+                        <p style="font-size: 1.15rem; color: rgba(242, 239, 233, 0.7); margin-bottom: 40px;">
+                            Sertifikat Konecta bukan sekadar tanda kelulusan. Ini adalah bukti kompetensi teknis yang
+                            divalidasi oleh pakar industri dan diakui oleh jaringan partner kami di seluruh dunia.
+                        </p>
+                        <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                            <div
+                                style="background: rgba(242, 239, 233, 0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(242, 239, 233, 0.1);">
+                                <ion-icon name="shield-checkmark-outline"
+                                    style="font-size: 2rem; color: var(--accent-secondary); margin-bottom: 12px;"></ion-icon>
+                                <h4 style="color: var(--text-on-dark);">Verified Skills</h4>
+                            </div>
+                            <div
+                                style="background: rgba(242, 239, 233, 0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(242, 239, 233, 0.1);">
+                                <ion-icon name="globe-outline"
+                                    style="font-size: 2rem; color: var(--accent-secondary); margin-bottom: 12px;"></ion-icon>
+                                <h4 style="color: var(--text-on-dark);">Hiring Partners</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-visual" data-aos="fade-left">
+                        <div
+                            style="background: #fff; padding: 40px; border-radius: var(--radius-lg); color: var(--text-primary); box-shadow: 0 40px 100px rgba(0,0,0,0.3);">
+                            <div style="border: 2px solid var(--accent-primary); padding: 40px; text-align: center;">
+                                <div style="font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 24px;">
+                                    Certificate of Completion</div>
+                                <div
+                                    style="width: 60px; height: 2px; background: var(--accent-primary); margin: 0 auto 24px;">
+                                </div>
+                                <p
+                                    style="font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 8px;">
+                                    Proudly Presented to</p>
+                                <div
+                                    style="font-family: var(--font-serif); font-size: 2rem; color: var(--accent-primary); margin-bottom: 32px;">
+                                    Your Name Here</div>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">For successfully mastering
+                                    the Full-Stack Engineering curriculum at Konecta Learning Systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MENTOR SECTION -->
+            <section class="section section-white" id="mentor">
+                <div class="container">
+                    <div style="text-align: center; max-width: 800px; margin-inline: auto; margin-bottom: 60px;">
+                        <p class="mono-text" style="color: var(--accent-primary); margin-bottom: 16px;">// INSTRUKTUR
+                            EXPERT</p>
+                        <h2 class="h2">Belajar dari <i
+                                style="font-family: var(--font-serif); font-weight: 400;">Praktisi</i> yang Sebenarnya.
+                        </h2>
+                    </div>
+
+                    <div class="mentor-card" data-aos="fade-up"
+                        style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: center; background: var(--bg-main); border-radius: var(--radius-xl); overflow: hidden; padding: 60px;">
+                        <div class="mentor-visual">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+                                alt="Alex Mercer"
+                                style="aspect-ratio: 1/1; object-fit: cover; border-radius: var(--radius-lg); width: 100%;">
+                        </div>
+                        <div class="mentor-info">
+                            <h3 style="font-size: 2.5rem; margin-bottom: 8px;">Alex Mercer</h3>
+                            <p class="mono-text" style="color: var(--accent-primary); margin-bottom: 24px;">Ex-Senior
+                                Software Engineer @ Vercel</p>
+                            <p
+                                style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 32px;">
+                                "Tujuan saya di Konecta adalah memastikan Anda tidak hanya belajar syntax, tapi memahami
+                                filosofi di balik engineering yang berkualitas. Saya akan membimbing Anda membangun
+                                produk nyata yang berskala jutaan pengguna."
+                            </p>
+                            <div style="display: flex; gap: 20px;">
+                                <a href="#" style="font-size: 1.5rem; color: var(--text-primary);"><ion-icon
+                                        name="logo-linkedin"></ion-icon></a>
+                                <a href="#" style="font-size: 1.5rem; color: var(--text-primary);"><ion-icon
+                                        name="logo-github"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRICING SECTION -->
+            <section class="section section-light" id="pricing">
+                <div class="container">
+                    <div style="text-align: center; max-width: 800px; margin-inline: auto; margin-bottom: 60px;">
+                        <p class="mono-text" style="color: var(--accent-primary); margin-bottom: 16px;">// PILIHAN
+                            PROGRAM</p>
+                        <h2 class="h2">Investasi untuk <i style="font-family: var(--font-serif); font-weight: 400;">Masa
+                                Depan</i> Anda.</h2>
+                    </div>
+
+                    <div class="pricing-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+                        <div class="pricing-card" data-aos="fade-up"
+                            style="background: var(--bg-surface); padding: 48px; border-radius: var(--radius-xl); border: 1px solid var(--border-subtle);">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Standard Path</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 32px;">Untuk belajar mandiri dengan
+                                kurikulum lengkap.</p>
+                            <div
+                                style="font-family: var(--font-serif); font-size: 3.5rem; color: var(--text-primary); margin-bottom: 32px;">
+                                Rp 990k <span
+                                    style="font-family: var(--font-sans); font-size: 1rem; color: var(--text-secondary);">/
+                                    modul</span></div>
+                            <ul style="margin-bottom: 40px; display: grid; gap: 16px;">
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-primary);"></ion-icon> Akses
+                                    Materi Selamanya</li>
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-primary);"></ion-icon>
+                                    Community Discord</li>
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-primary);"></ion-icon>
+                                    Sertifikat Digital</li>
+                            </ul>
+                            <a href="#" class="btn-secondary" style="width: 100%;">Mulai Belajar</a>
+                        </div>
+
+                        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100"
+                            style="background: var(--bg-dark); color: var(--text-on-dark); padding: 48px; border-radius: var(--radius-xl); position: relative; overflow: hidden;">
+                            <div
+                                style="position: absolute; top: 20px; right: 20px; background: var(--accent-primary); color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">
+                                MOST POPULAR</div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: var(--text-on-dark);">Engineering
+                                Pro</h3>
+                            <p style="opacity: 0.7; margin-bottom: 32px;">Bimbingan intensif dan persiapan karir.</p>
+                            <div
+                                style="font-family: var(--font-serif); font-size: 3.5rem; color: var(--text-on-dark); margin-bottom: 32px;">
+                                Rp 2.5jt <span style="font-family: var(--font-sans); font-size: 1rem; opacity: 0.7;">/
+                                    modul</span></div>
+                            <ul style="margin-bottom: 40px; display: grid; gap: 16px;">
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-secondary);"></ion-icon>
+                                    Semua fitur Standard</li>
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-secondary);"></ion-icon>
+                                    1-on-1 Code Review</li>
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-secondary);"></ion-icon>
+                                    Interview Preparation</li>
+                                <li style="display: flex; gap: 12px; align-items: center;"><ion-icon
+                                        name="checkmark-outline" style="color: var(--accent-secondary);"></ion-icon>
+                                    Hiring Partner Referral</li>
+                            </ul>
+                            <a href="#" class="btn-primary" style="width: 100%; border: none;">Apply to Program</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <section class="section" id="testimonials">
+                <div class="container">
+                    <h2 class="h2 text-center" style="text-align: center;">What they say.</h2>
+
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="0">
+                            <div class="stars">
+                                <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon>
+                            </div>
+                            <p style="font-size: 1.1rem; margin-bottom: 24px;">"Kurikulumnya sangat efisien. Saya
+                                berhasil mendapatkan pekerjaan sebagai Junior React Developer hanya dalam 4 bulan.
+                                Bimbingan kode dari AI benar-benar terasa seperti memiliki pengembang senior di sisi
+                                saya."</p>
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <div
+                                    style="width: 40px; height: 40px; background: var(--bg-surface-hover); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <ion-icon name="person"></ion-icon>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: 600;">Sarah Chen</h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Frontend Engineer @
+                                        Stripe</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="stars">
+                                <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon>
+                            </div>
+                            <p style="font-size: 1.1rem; margin-bottom: 24px;">"Tidak seperti bootcamp lainnya, Konecta
+                                mengajarkan Anda cara berpikir layaknya seorang engineer. Fokus pada arsitektur dan
+                                kebersihan kode adalah apa yang dicari perusahaan di tahun 2026."</p>
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <div
+                                    style="width: 40px; height: 40px; background: var(--bg-surface-hover); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <ion-icon name="person"></ion-icon>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: 600;">David Okafor</h4>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Fullstack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section" id="faq">
+                <div class="container">
+                    <h2 class="h2 text-center" style="text-align: center;">Frequently Asked Questions.</h2>
+
+                    <div class="faq-list" data-aos="fade-up">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Do I need prior coding experience?</span>
+                                <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Tidak. Kurikulum inti kami dirancang untuk membawa Anda dari nol hingga menjadi
+                                    pengembang yang fungsional. Namun, ritmenya cukup menantang dan membutuhkan komitmen
+                                    serta disiplin yang tinggi.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How does the AI Mentor work?</span>
+                                <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Konecta menggunakan AI canggih yang dilatih khusus dengan kurikulum kami. AI akan
+                                    meninjau kode Anda secara langsung, menjelaskan kesalahan, dan menantang Anda untuk
+                                    menemukan solusi secara mandiri.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>What is your refund policy?</span>
+                                <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Kami menawarkan jaminan uang kembali 14 hari tanpa syarat. Jika Anda merasa program
+                                    intensif kami tidak sesuai untuk Anda, cukup kirimkan email ke tim bantuan kami.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA SECTION -->
+            <section class="section section-white">
+                <div class="container">
+                    <div class="cta-banner" data-aos="zoom-in"
+                        style="background: var(--bg-dark); color: var(--text-on-dark); padding: 100px 40px; border-radius: var(--radius-xl); text-align: center; position: relative; overflow: hidden;">
+                        <div
+                            style="position: absolute; top:0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 10% 20%, rgba(195, 106, 45, 0.1), transparent); z-index: 1;">
+                        </div>
+                        <div style="position: relative; z-index: 2;">
+                            <h2 class="h1" style="color: var(--text-on-dark); margin-bottom: 32px;">Siap Memulai <br><i
+                                    style="font-family: var(--font-serif); font-weight: 400;">Perjalanan</i> Anda?</h2>
+                            <p
+                                style="font-size: 1.25rem; color: rgba(242, 239, 233, 0.7); max-width: 600px; margin-inline: auto; margin-bottom: 48px;">
+                                Bergabunglah bersama 100,000+ talenta yang sedang bertransformasi menjadi engineer kelas
+                                dunia.
+                            </p>
+                            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                                <a href="#courses" class="btn-primary"
+                                    style="background: var(--accent-secondary); color: var(--bg-dark);">Daftar
+                                    Sekarang</a>
+                                <a href="#" class="btn-secondary"
+                                    style="color: #fff; border-color: rgba(242, 239, 233, 0.3);">Konsultasi Gratis</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- MATRIX FOOTER -->
+    <footer class="footer" style="background-color: var(--bg-dark); color: var(--text-on-dark); padding: 80px 0 40px;">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col footer-brand">
+                    <a href="#top" class="logo" style="color: var(--text-on-dark);">
+                        <div class="logo-dot" style="background-color: var(--accent-secondary);"></div>
+                        Konecta.
+                    </a>
+                    <p style="margin-top: 16px; color: rgba(242, 239, 233, 0.6); max-width: 250px;">
+                        Standar definitif untuk pendidikan teknis dan akselerasi karir di tahun 2026.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4
+                        style="color: var(--text-on-dark); font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 24px;">
+                        Overview</h4>
+                    <ul style="opacity: 0.8;">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Philosophy</a></li>
+                        <li><a href="#courses">Curriculum</a></li>
+                        <li><a href="#" onclick="alert('Blog coming soon!'); return false;">Insights</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4
+                        style="color: var(--text-on-dark); font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 24px;">
+                        Connect</h4>
+                    <ul style="flex-direction: row; gap: 16px;">
+                        <li><a href="#" style="color: var(--accent-secondary);"><ion-icon name="logo-github"
+                                    size="large"></ion-icon></a></li>
+                        <li><a href="#" style="color: var(--accent-secondary);"><ion-icon name="logo-linkedin"
+                                    size="large"></ion-icon></a></li>
+                        <li><a href="#" style="color: var(--accent-secondary);"><ion-icon name="logo-discord"
+                                    size="large"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom"
+                style="border-top: 1px solid rgba(242, 239, 233, 0.1); margin-top: 60px; padding-top: 30px; display: flex; justify-content: space-between; align-items: center; color: rgba(242, 239, 233, 0.5); font-size: 0.9rem;">
+                <p>&copy; 2026 Konecta Learning Systems.</p>
+                <div class="mono-text" style="color: var(--accent-secondary);">Ind. Standard v2.1</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =========================================
+         AI MENTOR CHAT (SIMULATED UI)
+         ========================================= -->
+    <div class="ai-mentor-container">
+
+        <!-- The Chat Panel (Hidden by default) -->
+        <div class="ai-chat-panel" id="aiChatPanel">
+            <div class="ai-chat-header">
+                <div class="ai-chat-title">
+                    <div class="logo-dot"></div>
+                    Konecta AI Core
+                </div>
+                <button class="ai-chat-close" id="closeAiChat">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="ai-chat-body" id="aiChatBody">
+                <div class="ai-msg system">
+                    Hello. I'm the Konecta AI Assistant. How can I help optimize your learning today?
+                </div>
+                <!-- Dynamic messages go here -->
+            </div>
+
+            <div class="ai-chat-input">
+                <input type="text" id="aiInput" placeholder="Ask a question...">
+                <button id="aiSendBtn">
+                    <ion-icon name="arrow-up-circle"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- The Floating Toggle Button -->
+        <button class="ai-toggle-btn" id="aiToggleBtn" aria-label="Open AI Mentor"
+            style="background: var(--accent-primary); color: #fff; box-shadow: 0 10px 30px rgba(195, 106, 45, 0.4);">
+            <ion-icon name="sparkles"></ion-icon>
+        </button>
+
+    </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/home.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

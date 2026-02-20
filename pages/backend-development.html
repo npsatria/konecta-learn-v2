@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Systems | Konecta 2026</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body id="top">
+
+    <!-- FLOATING NAVBAR -->
+    <header class="header" data-header>
+        <div class="container">
+            <nav class="navbar-pill">
+                <a href="../index.html" class="logo">
+                    <div class="logo-dot"></div>
+                    Konecta.
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="../index.html#courses" class="nav-link active">Curriculum</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="../index.html#courses" class="btn-primary btn-sm">Explore</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="toggle menu" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav class="mobile-nav-links">
+            <a href="../index.html#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+            <a href="../index.html#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+            <a href="../index.html#courses" class="mobile-nav-link" onclick="closeMobileMenu()">Courses</a>
+            <a href="#" class="mobile-nav-link" onclick="alert('Coming soon!'); closeMobileMenu()">Articles</a>
+        </nav>
+        <a href="../index.html#courses" class="btn-primary" onclick="closeMobileMenu()">Explore Courses</a>
+    </div>
+
+    <main>
+        <article>
+            <section class="section">
+                <div class="container">
+
+                    <div class="editorial-hero">
+                        <div class="hero-tag" style="margin-bottom: 24px;">Systems Track</div>
+                        <h1 class="h1" style="max-width: 900px;">
+                            Backend <span class="italic-accent">Architecture</span> & Microservices
+                        </h1>
+                        <div class="course-meta-badges">
+                            <div class="meta-badge"><ion-icon name="star"></ion-icon> 4.9 Rating</div>
+                            <div class="meta-badge"><ion-icon name="server-outline"></ion-icon> Master Level</div>
+                            <div class="meta-badge"><ion-icon name="people-outline"></ion-icon> 8.4k Engineers</div>
+                        </div>
+                        <p class="hero-desc" style="text-align: left; margin: var(--space-md) 0 0 0; max-width: 800px;">
+                            Kuasai dunia yang tak terlihat. Bangun API super skalabel, sistem terdistribusi, dan pipa
+                            data real-time.
+                        </p>
+                    </div>
+
+                    <div class="academy-layout">
+                        <!-- Main Content Article -->
+                        <div class="academy-main">
+                            <p class="mono-text text-accent" style="margin-bottom: 8px;">// PROGRAM OVERVIEW</p>
+                            <h2 class="h2" style="font-size: 2.5rem; margin-bottom: var(--space-md);">Scale Everything.
+                            </h2>
+                            <p>Backend bukan hanya tentang API, tapi tentang ketahanan sistem. Belajar bagaimana
+                                menangani ribuan request per detik tanpa jeda menggunakan arsitektur modern.</p>
+
+                            <h3 class="h3" style="margin-top: var(--space-lg);">Target Learning Outcomes</h3>
+                            <div class="outcome-grid">
+                                <div class="outcome-card">
+                                    <div class="outcome-icon"><ion-icon name="cloud-outline"></ion-icon></div>
+                                    <div class="outcome-text">
+                                        <h4>Microservices</h4>
+                                        <p>Memecah monolit menjadi layanan mandiri yang tangguh.</p>
+                                    </div>
+                                </div>
+                                <div class="outcome-card">
+                                    <div class="outcome-icon"><ion-icon name="speedometer-outline"></ion-icon></div>
+                                    <div class="outcome-text">
+                                        <h4>Performance Tuning</h4>
+                                        <p>Optimasi database dan caching untuk latensi rendah.</p>
+                                    </div>
+                                </div>
+                                <div class="outcome-card">
+                                    <div class="outcome-icon"><ion-icon name="lock-closed-outline"></ion-icon></div>
+                                    <div class="outcome-text">
+                                        <h4>Advanced Security</h4>
+                                        <p>Implementasi OAuth2, JWT, dan proteksi API tingkat tinggi.</p>
+                                    </div>
+                                </div>
+                                <div class="outcome-card">
+                                    <div class="outcome-icon"><ion-icon name="infinite-outline"></ion-icon></div>
+                                    <div class="outcome-text">
+                                        <h4>DevOps & CI/CD</h4>
+                                        <p>Otomatisasi deployment dengan Docker dan Kubernetes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Content -->
+                        <aside class="academy-sidebar">
+                            <div class="syllabi-container">
+                                <p class="mono-text text-accent" style="margin-bottom: var(--space-md);">// CURRICULUM
+                                    SYLLABUS</p>
+
+                                <div class="syllabus-accordion active">
+                                    <div class="syllabus-header"
+                                        onclick="this.parentElement.classList.toggle('active')">
+                                        <div class="syllabus-info">
+                                            <span class="syllabus-module-num">MODUL 01</span>
+                                            <span class="syllabus-module-title">Node.js deep backend</span>
+                                        </div>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="syllabus-content">
+                                        <p>Event loop, stream, buffer, dan penguasaan Express/NestJS secara mendalam.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="syllabus-accordion">
+                                    <div class="syllabus-header"
+                                        onclick="this.parentElement.classList.toggle('active')">
+                                        <div class="syllabus-info">
+                                            <span class="syllabus-module-num">MODUL 02</span>
+                                            <span class="syllabus-module-title">DB Architecture</span>
+                                        </div>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="syllabus-content">
+                                        <p>SQL vs NoSQL, strategi Indexing, dan replikasi database untuk ketersediaan
+                                            tinggi.</p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-top: var(--space-lg);">
+                                    <a href="#" class="btn-primary"
+                                        style="width: 100%; text-align: center; padding: 18px 0; font-size: 1.1rem;">Scale
+                                        My Career</a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding-top: 0;">
+                <p>&copy; 2026 Konecta Learning Systems.</p>
+                <div class="mono-text" style="color: var(--text-secondary);">Ind. Standard v2.1</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/home.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
