@@ -245,6 +245,19 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
   transform: translateY(-1px);
 }
 
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
 .nav-link {
   font-size: 1rem; /* Sedikit lebih besar agar mudah dibaca */
   font-weight: 500;
