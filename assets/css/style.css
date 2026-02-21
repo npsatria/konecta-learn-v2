@@ -845,17 +845,17 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
    FOOTER (Dribbble Inspired)
    ========================================= */
 .footer {
-  padding: var(--space-2xl) 0 var(--space-xl) 0;
+  padding: var(--space-xl) 0 var(--space-md) 0;
   background: var(--bg-main);
   border-top: 1px solid var(--border-subtle);
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-xl);
 }
 
 .footer-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-xl);
-  margin-bottom: var(--space-2xl);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .footer-col h4 {
@@ -890,10 +890,10 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-xl) 0;
+  padding: var(--space-lg) 0;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   gap: var(--space-lg);
 }
 
@@ -998,8 +998,13 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
   .editorial-layout {
     grid-template-columns: 1fr;
   }
-  .footer-grid {
+  .footer-grid-4 {
     grid-template-columns: 1fr 1fr;
+  }
+  .footer-newsletter {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
   }
 }
 
@@ -1016,8 +1021,20 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
     align-items: center;
     justify-content: center;
   }
-  .footer-grid {
+  .footer-grid-4 {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .newsletter-form .btn-primary {
+    width: 100%;
   }
   .hero .h1 {
     font-size: 2.5rem;
