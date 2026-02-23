@@ -112,7 +112,7 @@ function toggleChat() {
         setTimeout(() => aiInput.focus(), 300);
     } else {
         aiChatPanel.classList.remove("active");
-        aiToggleBtn.innerHTML = '<ion-icon name="logo-electron"></ion-icon>';
+        aiToggleBtn.innerHTML = '<ion-icon name="sparkles"></ion-icon>';
     }
 }
 
@@ -143,8 +143,29 @@ function handleSendMessage() {
     setTimeout(() => {
         removeMessage(loadingId);
 
-        // Pick random response
-        const randomReply = aiResponses[Math.floor(Math.random() * aiResponses.length)];
+        let randomReply = "";
+        const lower = text.toLowerCase();
+
+        // Simple Keyword Matching AI System
+        if (lower.includes("halo") || lower.includes("hai") || lower.includes("hello")) {
+            randomReply = "Halo! Konecta AI siap membantu. Ada topik atau skil khusus yang ingin Anda kuasai hari ini?";
+        } else if (lower.includes("harga") || lower.includes("biaya") || lower.includes("bayar")) {
+            randomReply = "Biaya langganan Konecta sangat terjangkau! Mulai dari Rp 250.000/bulan Anda bisa mengakses semua kelas premium.";
+        } else if (lower.includes("sertifikat") || lower.includes("kerja") || lower.includes("lulus")) {
+            randomReply = "Tentu! Setiap lulusan akan mendapat Sertifikat Digital Resmi yang tervalidasi industri dan portfolio instan untuk melamar kerja.";
+        } else if (lower.includes("web") || lower.includes("html") || lower.includes("react")) {
+            randomReply = "Wah, peminat Web Dev! Saya sangat merekomendasikan Anda untuk mengecek kelas 'Frontend Web Engineering' di katalog kami.";
+        } else {
+            // Default simulated dynamic response
+            const defaultResponses = [
+                `Menarik! Mengenai penyebutan '${text}', silakan cek silabus kurikulum kami untuk detail teknisnya.`,
+                "Berdasarkan analisis skill Anda, saran saya mulailah dari kelas fundamental terlebih dahulu.",
+                "Itu pertanyaan yang bagus! Konsep tersebut dibahas secara mendalam di program Masterclass Konecta.",
+                `Saya mencatat ketertarikan Anda pada '${text}'. Ingin saya hubungkan dengan mentor manusia?`
+            ];
+            randomReply = defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+        }
+
         addMessage(randomReply, 'system');
 
         scrollToBottom();
@@ -215,7 +236,7 @@ const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
 function toggleMobileMenu() {
     mobileMenuBtn.classList.toggle('active');
     mobileMenuOverlay.classList.toggle('active');
-    
+
     // Prevent scrolling when menu is open
     if (mobileMenuOverlay.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
