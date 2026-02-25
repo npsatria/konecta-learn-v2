@@ -1055,8 +1055,79 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
   .newsletter-form .btn-primary {
     width: 100%;
   }
+  .hero {
+    text-align: left !important;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-content p {
+    text-align: left;
+    margin-inline: 0 !important;
+  }
+  .hero-content > div[style] {
+    justify-content: flex-start !important;
+  }
   .hero .h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .h2 {
+    font-size: 2rem !important;
+  }
+  .h3 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Hide obstructive scroll indicator on mobile */
+  .scroll-indicator, .mouse-scroll, .mouse, .wheel,
+  [class*="scroll-indicator"], [class*="mouse-scroll"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Code snippet mobile safety */
+  pre, code {
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 0.75rem !important;
+  }
+  .smart-snippet {
+    margin-top: var(--space-md);
+  }
+
+  /* Mission Section Vertical Stack */
+  .about-missions {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* Badge Wrapping Fix */
+  .course-meta-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .meta-badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  /* Stats Ribbon Fix */
+  .stats-ribbon-container {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  /* About Grid Fix */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
   }
 
   /* Feature Grid Mobile */
