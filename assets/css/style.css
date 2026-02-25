@@ -366,16 +366,24 @@ h3 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -1px; }
   font-size: 2.5rem;
   font-weight: 400;
   color: var(--text-on-dark);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: -0.02em;
 }
 
 .mobile-nav-link:hover, .mobile-nav-link.active {
   color: var(--accent-secondary);
-  transform: scale(1.05);
+  letter-spacing: 1px;
 }
 
 .mobile-menu-overlay .btn-primary {
   margin-top: 3rem;
+}
+
+.mobile-menu-overlay .btn-primary:hover {
+  background: var(--bg-main);
+  color: var(--accent-primary);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* =========================================
